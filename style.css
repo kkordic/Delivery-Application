@@ -1,0 +1,68 @@
+img, svg{
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header{
+  padding: 10px 0;
+  background: radial-gradient(circle at 50% 50%, #ca2f33, #772b2a);
+
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.logo{
+	display: block;
+	float:left;
+	width: 80px;
+}
+
+
+.group {
+	overflow: hidden;
+}
+
+.delivery {
+	float: right;
+	display: block;
+	padding: 3px 0 3px 28px;
+	background: url('img/delivery-icon.svg') no-repeat left center;
+	background-size: 20px;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	color:#ffffff;
+	text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 460px){
+	.logo{
+		width: 132px;
+	}
+	.logo-img{
+		width: 100%;
+	}
+	.header {
+		padding: 16px 0;
+	}
+	.delivery{
+		padding: 12px 0px 12px 28px;
+	}
+}
+
+
+@media screen and (min-width: 768px){
+	.header {
+		padding: 27px 0;
+	}
+	.container {
+		padding: 0;
+	}
+}

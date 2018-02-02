@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:100,300,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Delivery Application</title>
 </head>
 
@@ -15,7 +16,7 @@
 <header class="header">
 	<div class="container group">
 		<a href="javascript:void(0)" class="logo"><img src="img/span-logo.svg" class="logo-img"></a>
-		<a class="menu">
+		<a href="javascript:void(0)" class="menu">
 			<img src="img/menu.svg" class="menu-icon">
 		</a>
 		<a href="" class="header-profile">
@@ -27,16 +28,24 @@
 	</div>
 </header>
 
-<div class="nav">
-	<div class="nav-list">
-		<a href="" class="nav-active">ALL DELIVERIES
-		</a>
-		<a href="" class="nav-item">NEW DELIVERIES REQUEST
-		</a>
-	</div>
-	<div class="search">
-		<input type="text" class="search-input" placeholder="SEARCH">
-	</div>
+<div class="navigation">
+	<nav class="nav">
+		<ul class="nav-list">
+			<li class="nav-item">
+				<a href="" class="nav-link">
+					All deliveries
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">
+					New deliveries request
+				</a>
+			</li>
+		</ul>
+		<div class="search">
+			<input type="text" class="search-input" placeholder="search">
+		</div>
+	</nav>
 </div>
 
 <div class="container group">
@@ -48,7 +57,13 @@
 </div>
 
 
-
+<script type="text/javascript">
+	$(document).ready(function (){
+		$(".menu").click(function(){
+		    $(".nav").toggleClass("nav-active");
+		});
+	});
+</script>
 
 </body>
 </html>

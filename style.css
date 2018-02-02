@@ -33,8 +33,7 @@ a {
 	float: right;
 	display: block;
 	height: 18px;
-	margin-right: 32px;
-	padding: 3px 0 3px 28px;
+	padding: 5px 0 5px 28px;
 	background: url('img/delivery-icon.svg') no-repeat left center;
 	background-size: 18px;
 	font-size: 14px;
@@ -42,6 +41,7 @@ a {
 	color:#ffffff;
 	text-transform: uppercase;
 	font-weight: 100;
+	overflow: visible;
 }
 
 .delivery-label{
@@ -56,12 +56,14 @@ a {
 .header-profile-img{
 	width: 24px;
 	border-radius: 50%;
+	margin: 4px 10px 4px 0;
 }
 
 
 .menu{
 	display: block;
 	float: right;
+	padding: 6px 0;
 }
 
 .menu-img{
@@ -81,25 +83,28 @@ a {
 .filter-link{
 
 	background: url('img/sort-desc-fontawesome-copy-2.svg') no-repeat right center;
-	background-size: 18px;
-	font-size: 14px;
+	background-size: 10px;
+	font-size: 10px;
 	letter-spacing: 1.5px;
     color: #7d7d7d;
     text-transform: uppercase;
-    padding-right: 20px;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    border: 1px solid #888;
+    border-radius: 4px;
 }
 
 .filter{
-	font-size: 14px;
+	font-size: 10px;
 	letter-spacing: 1.5px;
     color: #7d7d7d;
 	text-transform: uppercase;
-	padding-top: 60px;
+	padding: 10px 0;
 }
 
 
 
-@media screen and (min-width: 460px){
+@media screen and (min-width: 480px){
 	.logo{
 		width: 132px;
 	}
@@ -111,6 +116,7 @@ a {
 	}
 	.delivery{
 		padding: 12px 0px 12px 28px;
+		margin-right: 32px;
 	}
 	.delivery-label{
 		display: inline-block;
@@ -118,11 +124,15 @@ a {
 	.header-profile-img{
 	width: 40px;
 	padding: 5px 0;
+	margin: 0;
 	}
 	.menu{
-		padding: 12px 0 12px 32px;
+		padding: 14px 0 12px 32px;
 	}
-
+	.filter, .filter-link{
+		font-size: 14px;
+		border: none;
+	}
 
 }
 
@@ -132,7 +142,7 @@ a {
 		padding: 27px 0;
 	}
 	.container {
-		padding: 0;
+		padding: 0 8px;
 	}
 	.title{
 		float: left;
@@ -140,5 +150,13 @@ a {
 	}
 	.filter{
 		float: right;
+		padding-top: 60px;
 	}
+}
+
+
+
+
+@media screen and (min-width: 530px){
+
 }

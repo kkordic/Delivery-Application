@@ -1,4 +1,4 @@
-img, svg{
+img, svg {
 	max-width: 100%;
 }
 
@@ -6,10 +6,9 @@ a {
 	text-decoration: none;
 }
 
-.header{
+.header {
   padding: 10px 0;
   background: radial-gradient(circle at 50% 50%, #ca2f33, #772b2a);
-
 }
 
 .container {
@@ -18,12 +17,11 @@ a {
 	padding: 0 10px;
 }
 
-.logo{
+.logo {
 	display: block;
 	float:left;
 	width: 80px;
 }
-
 
 .group {
 	overflow: hidden;
@@ -44,7 +42,7 @@ a {
 	overflow: visible;
 }
 
-.delivery-label{
+.delivery-label {
 	display: none;
 }
 
@@ -53,20 +51,19 @@ a {
 	float: right;
 }
 
-.header-profile-img{
+.header-profile-img {
 	width: 24px;
 	border-radius: 50%;
 	margin: 4px 10px 4px 0;
 }
 
-
-.menu{
+.menu {
 	display: block;
 	float: right;
 	padding: 6px 0;
 }
 
-.menu-img{
+.menu-img {
 	width: 16px;
 }
 
@@ -116,9 +113,8 @@ a.nav-link:hover {
  	display: inline;
  	float: left;
  	margin-right: 60px;
- 	padding: 18px 4px 18px 20px;;
+ 	padding: 8px;
 }
-
 
 .search-input {
  	height: 18px;
@@ -136,8 +132,7 @@ a.nav-link:hover {
 	color: #7d7d7d;
 }
 
-
-.title{
+.title {
 	font-family: Montserrat;
  	font-size: 20px;
  	font-weight: 100;
@@ -147,8 +142,7 @@ a.nav-link:hover {
 	margin: 0;
 }
 
-.filter-link{
-
+.filter-link {
 	background: url('img/sort-desc-fontawesome-copy-2.svg') no-repeat right center;
 	background-size: 10px;
 	font-size: 10px;
@@ -161,7 +155,7 @@ a.nav-link:hover {
     border-radius: 4px;
 }
 
-.filter{
+.filter {
 	font-size: 10px;
 	letter-spacing: 1.5px;
     color: #7d7d7d;
@@ -169,32 +163,76 @@ a.nav-link:hover {
 	padding: 10px 0;
 }
 
+.mail-list {
+	margin: 0;
+	padding: 0 16px;
+	list-style: none;
+}
 
+.mail-item {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+	color: #7d7d7d;
+  	border-radius: 5px;
+  	background-color: #ffffff;
+  	box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+  	font-size: 12px;
+}
+
+.mail-title {
+ 	font-weight: bold;
+ 	color: #ca2f33;
+}
+
+.mail-recipient {
+  	color: #3e3e3e;
+ 	font-weight: bold;
+}
+
+.mail-title, .mail-recipient, .mail-content, .mail-info {
+ 	padding: 4px;
+}
+
+.mail-info {
+	float: right;
+}
+
+.mail-warning {
+	display: block;
+	margin: 0 auto;
+	background-color: rgba(202, 47, 51, 0.1);
+	padding: 4px 0;
+}
+
+.mail-warning img {
+	position: relative;
+	left: 50%;
+}
 
 @media screen and (min-width: 480px){
-	.logo{
+	.logo {
 		width: 132px;
 	}
-	.logo-img{
+	.logo-img {
 		width: 100%;
 	}
 	.header {
 		padding: 16px 0;
 	}
-	.delivery{
+	.delivery {
 		padding: 12px 0px 12px 28px;
 		margin-right: 32px;
 	}
-	.delivery-label{
+	.delivery-label {
 		display: inline-block;
 	}
-	.header-profile-img{
+	.header-profile-img {
 	width: 40px;
 	padding: 5px 0;
 	margin: 0;
 	}
-	.menu{
-		
+	.menu {
 		padding: 14px 0 12px 32px;
 	}
 	.nav {
@@ -202,27 +240,25 @@ a.nav-link:hover {
    		padding: 0;
     	display: block;
     	background-color: #e1e1e1;
- 	}
+    }
 	.nav-list {
     	display: block;
     	float: left;
 	}
-
     .nav-item {
     	display: inline-block;
     	margin-right: 20px;
 	}
-
   	.search {
     	display: block;
     	float: left;
     	width: 200px;
+    	padding: 18px 4px 18px 20px;
   	}
-	.filter, .filter-link{
+	.filter, .filter-link {
 		font-size: 14px;
 		border: none;
 	}
-
 }
 
 
@@ -231,25 +267,51 @@ a.nav-link:hover {
 		padding: 27px 0;
 	}
 	.container {
-		padding: 0 8px;
+		padding: 0 16px;
 	}
-	.menu{
+	.menu {
 		display: block;
 	}
-	.title{
+	.title {
 		float: left;
 		font-size: 56px;
 	}
-	.filter{
+	.search {
+		float: right;
+		padding: 18px 4px 18px 20px;
+	}
+	.filter {
 		float: right;
 		padding-top: 60px;
 	}
-}
-
-
-@media screen and (min-width: 750px){
-	.search {
-		float: right;
+	.mail-item {
+		padding-right: 300px;
+		font-size: 15px;
+	}
+	.mail-title, .mail-recipient, .mail-warning {
+		float: left;
+	}
+	.mail-content {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.mail-info {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 0 4px;
+	}
+	.mail-warning {
+    	display: block;
+    	padding: 10px 10px 7px 10px;
+    	width: 18px;
+  	}
+  	.mail-title, .mail-recipient, .mail-content {
+  		padding: 10px;
+  	}
+  	.mail-warning img {
+		position: relative;
+		left: 0;
 	}
 }
-

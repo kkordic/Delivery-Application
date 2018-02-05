@@ -11,8 +11,12 @@ a {
   background: radial-gradient(circle at 50% 50%, #ca2f33, #772b2a);
 }
 
+.list {
+	height: 28px;
+}
+
 .container {
-	max-width: 1320px;
+	max-width: 2560px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -20,7 +24,7 @@ a {
 .logo {
 	display: block;
 	float:left;
-	width: 80px;
+	width: 88px;
 }
 
 .group {
@@ -49,12 +53,14 @@ a {
 .header-profile {
 	display: block;
 	float: right;
+	padding: 0;
 }
 
 .header-profile-img {
 	width: 24px;
 	border-radius: 50%;
 	margin: 4px 10px 4px 0;
+	display: none;
 }
 
 .menu {
@@ -86,9 +92,10 @@ a {
 }
 
 .nav-list {
-	margin: 0 0 10px 0;
-	padding: 20px 0 5px 20px;
+	margin: 0;
+	padding: 0;
  	list-style: none;
+ 	height: 100%;
 }
 
 .nav-item {
@@ -112,22 +119,21 @@ a.nav-link:hover {
 .search {
  	display: inline;
  	float: left;
- 	margin-right: 60px;
- 	padding: 8px;
+ 	padding: 10px 0;
 }
 
 .search-input {
  	height: 18px;
- 	width: 100%;
- 	padding: 10px 24px 10px 10px;
+    width: 180px;
+    padding: 5px 0px 5px 20px;
  	border-radius: 20px;
 	background-color: #eeeeee;
 	border: none;
-	padding-left: 20px;
 	background-image: url('img/search-fontawesome.png') ;
 	background-repeat: no-repeat;
 	background-position: 92% 50%;
 	text-transform: uppercase;
+	letter-spacing: 1.5px;
 	font-size: 14px;
 	color: #7d7d7d;
 }
@@ -172,12 +178,12 @@ a.nav-link:hover {
 .mail-item {
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	color: #7d7d7d;
   	border-radius: 5px;
   	background-color: #ffffff;
   	box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
-  	font-size: 12px;
+  	font-size: 14px;
 }
 
 .mail-title {
@@ -202,12 +208,13 @@ a.nav-link:hover {
 	display: block;
 	margin: 0 auto;
 	background-color: rgba(202, 47, 51, 0.1);
-	padding: 4px 0;
+	padding: 6px 0;
 }
 
 .mail-warning img {
 	position: relative;
 	left: 50%;
+    transform: translateX(-50%);
 }
 
 @media screen and (min-width: 480px){
@@ -216,44 +223,59 @@ a.nav-link:hover {
 	}
 	.logo-img {
 		width: 100%;
+		height: 40px;
 	}
 	.header {
 		padding: 16px 0;
 	}
 	.delivery {
-		padding: 12px 0px 12px 28px;
+		padding: 12px 0px 12px 26px;
 		margin-right: 32px;
 	}
 	.delivery-label {
 		display: inline-block;
 	}
 	.header-profile-img {
-	width: 40px;
-	padding: 5px 0;
-	margin: 0;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		margin: 0;
+		display: inline;
 	}
 	.menu {
 		padding: 14px 0 12px 32px;
 	}
+	.list {
+		height: 40px;
+	}
 	.nav {
     	position: relative;
-   		padding: 0;
+   		padding: 0 10px;
     	display: block;
     	background-color: #e1e1e1;
+    	
     }
 	.nav-list {
     	display: block;
     	float: left;
+	 	height: 50px;
+ 		line-height: 50px;
 	}
     .nav-item {
     	display: inline-block;
     	margin-right: 20px;
 	}
+	.nav-link {
+		padding: 0;
+	}
   	.search {
     	display: block;
-    	float: left;
-    	width: 200px;
-    	padding: 18px 4px 18px 20px;
+    	float: right;
+    	padding: 8px 4px 8px 20px;
+  	}
+  	.search-input {
+  		padding: 8px 0px 8px 20px;
+		width: 200px;
   	}
 	.filter, .filter-link {
 		font-size: 14px;
@@ -267,26 +289,59 @@ a.nav-link:hover {
 		padding: 27px 0;
 	}
 	.container {
-		padding: 0 16px;
+		padding: 0 73px 0 68px;
 	}
 	.menu {
 		display: block;
 	}
+	.list {
+		height: 42px;
+	}
+	.logo-img {
+		height: 42px
+	}
+	.header-profile {
+		padding-top: 1px;
+	}
+	.header-profile-img {
+		padding: 0;
+		margin: 0;
+	}
+	.nav {
+		height: 70px;
+		padding: 0 73px 0 72px;
+	}
+	.nav-list {
+		margin: 0;
+		padding: 0;
+ 		list-style: none;
+ 		height: 70px;
+ 		line-height: 70px;
+	}
 	.title {
 		float: left;
 		font-size: 56px;
+		padding: 34px 0;
 	}
 	.search {
 		float: right;
-		padding: 18px 4px 18px 20px;
+		padding: 16px 0;
+	}
+	.search-input {
+		padding: 10px 0px 10px 20px;
+		width: 192px;
 	}
 	.filter {
 		float: right;
-		padding-top: 60px;
+		padding-top: 78px;
+	}
+	.mail-list {
+		padding: 0 60px;
 	}
 	.mail-item {
-		padding-right: 300px;
+		padding-right: 320px;
 		font-size: 15px;
+		height: 54px;
 	}
 	.mail-title, .mail-recipient, .mail-warning {
 		float: left;
@@ -298,20 +353,29 @@ a.nav-link:hover {
 	}
 	.mail-info {
 		position: absolute;
-		top: 10px;
-		right: 10px;
-		padding: 0 4px;
+		top: 17px;
+    	right: 17px;
+    	padding: 0;
 	}
 	.mail-warning {
     	display: block;
-    	padding: 10px 10px 7px 10px;
-    	width: 18px;
+    	padding: 0;
+    	width: 52px;
+    	height: 54px;
   	}
   	.mail-title, .mail-recipient, .mail-content {
-  		padding: 10px;
+  		padding: 17px 0 19px 17px;
   	}
   	.mail-warning img {
 		position: relative;
-		left: 0;
+		left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
 	}
+}
+
+
+@media screen and (min-width: 804px){
+	.search-input {
+		width: 262px;
 }
